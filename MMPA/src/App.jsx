@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import facebook from './assets/facebook.svg'
+import instagram from './assets/instagram.svg'
+import twitter from './assets/twitter.svg'
+import mmpalogo from './assets/mmpalogo.jpg'
+
 import './App.css'
 
 function App() {
@@ -8,26 +11,31 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div class="main-content">
+        <div class="banner-container">
+       
+          <img src={mmpalogo} alt="MMPA Banner" class="banner-image"/>
+          <h2>Millbury Music & Performing Arts</h2>
+        </div>
+        
+        <div class="social-icons">
+                    <a href="https://www.facebook.com/millburymusic/" target="_blank">
+                        <img src={facebook} alt="Facebook"/>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src={instagram} alt="Instagram"/>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src={twitter} alt="Twitter"/>
+                    </a>
+        </div>
+         <div className="card">
+          <button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </button>
+         
+        </div>
       </div>
-      <h1>MMPA Website</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
