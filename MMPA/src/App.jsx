@@ -15,7 +15,8 @@ function App() {
         <div class="banner-container">
        
           <img src={mmpalogo} alt="MMPA Banner" class="banner-image"/>
-          <h2>Millbury Music & Performing Arts</h2>
+          <h1>Millbury Music & Performing Arts</h1>
+          <h2>Coming Soon!</h2>
         </div>
         
         <div class="social-icons">
